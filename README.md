@@ -37,6 +37,13 @@ regressor = LinearRegression()
 regressor.fit(x_train,y_train)
 y_pred = regressor.predict(x_test)
 y_pred
+
+```
+
+
+
+
+```
 #Graph plot for training data
 plt.scatter(x_train,y_train,color='black')
 plt.plot(x_train,regressor.predict(x_train),color='purple')
